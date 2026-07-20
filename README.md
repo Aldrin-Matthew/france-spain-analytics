@@ -42,18 +42,12 @@ Given that, this project takes two honest paths instead of guessing:
 2. **A simplified pressing proxy** (opponent completed passes ÷ own tackles, full match) in place of
    real PPDA, explicitly labeled as a cruder substitute, not the real metric.
 
-If you want the real thing, the only reliable free path is hand-tagging events from the match replay
-— see "Next steps" below.
-
 ## Stack
 
 - **Frontend:** React + Vite, hand-built SVG pitch diagrams (no charting library needed for the
   pitch views; `recharts` is installed for any additional stat charts you add).
 - **Data:** static JSON (`data/match_data.json`), no backend required — this is a single-match
-  dataset, so a database adds hosting complexity for no benefit. If you want to show off a
-  MongoDB/Node pipeline for your portfolio, use it in a `/scraper` ETL step that *produces* this
-  JSON file, rather than serving the live site from a database.
-
+  dataset, so a database adds hosting complexity for no benefit.
 ## Running locally
 
 ```bash
@@ -72,16 +66,13 @@ npm install -D gh-pages
 npm run deploy
 ```
 
-## Next steps / ideas to extend
+## New Ideas I am working on
 
 - Hand-tag real shot/pass coordinates from the match replay to replace the approximated pitch
   positions (label the switch clearly once done).
 - Replace the pressing-intensity proxy with true PPDA once/if event-level data becomes available.
 - Add pass-network diagrams (average position + pass volume between players) — needs event data,
-  see methodology note above.
-- Extend player spotlights to Ousmane Dembélé (France's most dangerous outlet — 2 shots, 2 on
-  target) for balance, since the story so far leans heavily on Spain's side of the ball.
-- Add a French-language toggle for LinkedIn/Instagram cross-posting to French football audiences.
+
 
 ## Sources
 

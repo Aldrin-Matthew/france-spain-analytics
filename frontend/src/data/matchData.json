@@ -1,0 +1,925 @@
+{
+  "meta": {
+    "competition": "FIFA World Cup 2026",
+    "round": "Semi-final",
+    "date": "2026-07-14",
+    "kickoff_local": "14:00",
+    "venue": "Dallas Stadium, Arlington, TX",
+    "referee": "Ivan Barton",
+    "final_score": {
+      "France": 0,
+      "Spain": 2
+    },
+    "sources": [
+      "https://playerstats.football/fixture/france/spain/2026-07-14",
+      "https://www.espn.com/soccer/match/_/gameId/760514/spain-france",
+      "https://newsletter.fotmob.com/p/spain-masterclass-knocks-out-france"
+    ],
+    "note": "Aggregate and per-player stats scraped/compiled from public match-stat sites. Shot/pass x,y coordinates are NOT from optical tracking data (not publicly available for this match) — pitch-map coordinates in this project are hand-placed approximations based on shot zone (inside/outside box) and match commentary, and are labeled as such in the UI."
+  },
+  "lineups": {
+    "France": {
+      "formation": "4-2-3-1",
+      "starting_xi": [
+        {
+          "name": "Mike Maignan",
+          "pos": "GK"
+        },
+        {
+          "name": "Lucas Digne",
+          "pos": "LB"
+        },
+        {
+          "name": "William Saliba",
+          "pos": "CB"
+        },
+        {
+          "name": "Dayot Upamecano",
+          "pos": "CB"
+        },
+        {
+          "name": "Jules Koundé",
+          "pos": "RB"
+        },
+        {
+          "name": "Adrien Rabiot",
+          "pos": "CM"
+        },
+        {
+          "name": "Aurélien Tchouaméni",
+          "pos": "CM"
+        },
+        {
+          "name": "Bradley Barcola",
+          "pos": "LW"
+        },
+        {
+          "name": "Michael Olise",
+          "pos": "AM"
+        },
+        {
+          "name": "Ousmane Dembélé",
+          "pos": "RW"
+        },
+        {
+          "name": "Kylian Mbappé",
+          "pos": "ST"
+        }
+      ],
+      "substitutes_used": [
+        {
+          "name": "Maxence Lacroix",
+          "on_for": "William Saliba",
+          "minute": 30
+        },
+        {
+          "name": "Kouadio Koné (Manu Koné)",
+          "on_for": "Adrien Rabiot",
+          "minute": 46
+        },
+        {
+          "name": "Désiré Doué",
+          "on_for": "Bradley Barcola",
+          "minute": 57
+        },
+        {
+          "name": "Rayan Cherki",
+          "on_for": "Michael Olise",
+          "minute": 72
+        },
+        {
+          "name": "Theo Hernández",
+          "on_for": "Lucas Digne",
+          "minute": 72
+        }
+      ],
+      "coach": "Didier Deschamps"
+    },
+    "Spain": {
+      "formation": "4-2-3-1",
+      "starting_xi": [
+        {
+          "name": "Unai Simón",
+          "pos": "GK"
+        },
+        {
+          "name": "Marc Cucurella",
+          "pos": "LB"
+        },
+        {
+          "name": "Aymeric Laporte",
+          "pos": "CB"
+        },
+        {
+          "name": "Pau Cubarsí",
+          "pos": "CB"
+        },
+        {
+          "name": "Pedro Porro",
+          "pos": "RB"
+        },
+        {
+          "name": "Fabián Ruiz",
+          "pos": "CM"
+        },
+        {
+          "name": "Rodri",
+          "pos": "CM"
+        },
+        {
+          "name": "Álex Baena",
+          "pos": "LW"
+        },
+        {
+          "name": "Dani Olmo",
+          "pos": "AM"
+        },
+        {
+          "name": "Lamine Yamal",
+          "pos": "RW"
+        },
+        {
+          "name": "Mikel Oyarzabal",
+          "pos": "ST"
+        }
+      ],
+      "substitutes_used": [
+        {
+          "name": "Ferran Torres",
+          "on_for": "Mikel Oyarzabal",
+          "minute": 74
+        },
+        {
+          "name": "Mikel Merino",
+          "on_for": "Dani Olmo",
+          "minute": 78
+        },
+        {
+          "name": "Pedri",
+          "on_for": "Fabián Ruiz",
+          "minute": 78
+        },
+        {
+          "name": "Marcos Llorente",
+          "on_for": "Pedro Porro",
+          "minute": 84
+        },
+        {
+          "name": "Nico Williams",
+          "on_for": "Álex Baena",
+          "minute": 84
+        }
+      ],
+      "coach": "Luis de la Fuente"
+    }
+  },
+  "timeline": [
+    {
+      "minute": 9,
+      "type": "foul",
+      "team": "France",
+      "player": "A. Rabiot"
+    },
+    {
+      "minute": 22,
+      "type": "goal",
+      "subtype": "penalty",
+      "team": "Spain",
+      "player": "M. Oyarzabal",
+      "score": "0-1"
+    },
+    {
+      "minute": 30,
+      "type": "substitution",
+      "team": "France",
+      "player_off": "W. Saliba",
+      "player_on": "M. Lacroix",
+      "reason": "injury"
+    },
+    {
+      "minute": 31,
+      "type": "foul",
+      "team": "Spain",
+      "player": "M. Cucurella"
+    },
+    {
+      "minute": 46,
+      "type": "substitution",
+      "team": "France",
+      "player_off": "A. Rabiot",
+      "player_on": "M. Koné"
+    },
+    {
+      "minute": 57,
+      "type": "substitution",
+      "team": "France",
+      "player_off": "B. Barcola",
+      "player_on": "D. Doué"
+    },
+    {
+      "minute": 58,
+      "type": "goal",
+      "team": "Spain",
+      "player": "P. Porro",
+      "assist": "D. Olmo",
+      "score": "0-2"
+    },
+    {
+      "minute": 65,
+      "type": "disallowed_goal",
+      "team": "Spain",
+      "player": "L. Yamal",
+      "reason": "offside"
+    },
+    {
+      "minute": 72,
+      "type": "substitution",
+      "team": "France",
+      "player_off": "M. Olise",
+      "player_on": "R. Cherki"
+    },
+    {
+      "minute": 72,
+      "type": "substitution",
+      "team": "France",
+      "player_off": "L. Digne",
+      "player_on": "T. Hernández"
+    },
+    {
+      "minute": 74,
+      "type": "substitution",
+      "team": "Spain",
+      "player_off": "M. Oyarzabal",
+      "player_on": "F. Torres"
+    },
+    {
+      "minute": 78,
+      "type": "substitution",
+      "team": "Spain",
+      "player_off": "D. Olmo",
+      "player_on": "M. Merino"
+    },
+    {
+      "minute": 78,
+      "type": "substitution",
+      "team": "Spain",
+      "player_off": "F. Ruiz",
+      "player_on": "Pedri"
+    },
+    {
+      "minute": 84,
+      "type": "substitution",
+      "team": "Spain",
+      "player_off": "P. Porro",
+      "player_on": "M. Llorente"
+    },
+    {
+      "minute": 84,
+      "type": "substitution",
+      "team": "Spain",
+      "player_off": "Á. Baena",
+      "player_on": "N. Williams"
+    },
+    {
+      "minute": 85,
+      "type": "card",
+      "card": "yellow",
+      "team": "France",
+      "player": "K. Mbappé"
+    }
+  ],
+  "corners": {
+    "France": [
+      6,
+      16,
+      38,
+      43
+    ],
+    "Spain": [
+      65,
+      65,
+      67,
+      90
+    ]
+  },
+  "team_stats": {
+    "France": {
+      "possession_pct": 49,
+      "passes": 472,
+      "tackles": 13,
+      "corners": 7,
+      "shots_total": 10,
+      "shots_on_target": 3,
+      "shots_off_target": 5,
+      "shots_blocked": 3,
+      "shots_outside_box": 6,
+      "shots_inside_box": 4,
+      "fouls": 11,
+      "offsides": 4,
+      "yellow_cards": 2,
+      "penalties_scored": 0,
+      "goals": 0,
+      "free_kicks": 17,
+      "goal_kicks": 8,
+      "throw_ins": 22,
+      "saves": 0,
+      "crosses": 20,
+      "xg": 0.3
+    },
+    "Spain": {
+      "possession_pct": 51,
+      "passes": 502,
+      "tackles": 22,
+      "corners": 1,
+      "shots_total": 10,
+      "shots_on_target": 2,
+      "shots_off_target": 5,
+      "shots_blocked": 2,
+      "shots_outside_box": 5,
+      "shots_inside_box": 5,
+      "fouls": 12,
+      "offsides": 5,
+      "yellow_cards": 1,
+      "penalties_scored": 1,
+      "goals": 2,
+      "free_kicks": 14,
+      "goal_kicks": 10,
+      "throw_ins": 16,
+      "saves": 3,
+      "crosses": 7,
+      "xg": 1.63
+    }
+  },
+  "player_stats": {
+    "France": [
+      {
+        "name": "K. Mbappé",
+        "shots": 3,
+        "sot": 1,
+        "key_passes": 0,
+        "tackles": 0,
+        "fouls_committed": 1,
+        "fouls_drawn": 0,
+        "dispossessed": 3,
+        "offsides": 3,
+        "yellow_cards": 1,
+        "goals": 0,
+        "assists": 0,
+        "foul_involvements": 1,
+        "goal_involvements": 0
+      },
+      {
+        "name": "O. Dembélé",
+        "shots": 2,
+        "sot": 2,
+        "key_passes": 2,
+        "tackles": 1,
+        "fouls_committed": 1,
+        "fouls_drawn": 0,
+        "dispossessed": 0,
+        "offsides": 0,
+        "yellow_cards": 0,
+        "goals": 0,
+        "assists": 0,
+        "foul_involvements": 1,
+        "goal_involvements": 0
+      },
+      {
+        "name": "D. Doué",
+        "shots": 1,
+        "sot": 0,
+        "key_passes": 2,
+        "tackles": 2,
+        "fouls_committed": 1,
+        "fouls_drawn": 2,
+        "dispossessed": 0,
+        "offsides": 0,
+        "yellow_cards": 0,
+        "goals": 0,
+        "assists": 0,
+        "foul_involvements": 3,
+        "goal_involvements": 0
+      },
+      {
+        "name": "M. Olise",
+        "shots": 0,
+        "sot": 0,
+        "key_passes": 2,
+        "tackles": 2,
+        "fouls_committed": 1,
+        "fouls_drawn": 3,
+        "dispossessed": 0,
+        "offsides": 0,
+        "yellow_cards": 0,
+        "goals": 0,
+        "assists": 0,
+        "foul_involvements": 4,
+        "goal_involvements": 0
+      },
+      {
+        "name": "A. Tchouaméni",
+        "shots": 1,
+        "sot": 0,
+        "key_passes": 1,
+        "tackles": 4,
+        "fouls_committed": 1,
+        "fouls_drawn": 4,
+        "dispossessed": 0,
+        "offsides": 0,
+        "yellow_cards": 0,
+        "goals": 0,
+        "assists": 0,
+        "foul_involvements": 5,
+        "goal_involvements": 0
+      },
+      {
+        "name": "B. Barcola",
+        "shots": 1,
+        "sot": 0,
+        "key_passes": 1,
+        "tackles": 0,
+        "fouls_committed": 0,
+        "fouls_drawn": 0,
+        "dispossessed": 0,
+        "offsides": 0,
+        "yellow_cards": 0,
+        "goals": 0,
+        "assists": 0,
+        "foul_involvements": 0,
+        "goal_involvements": 0
+      },
+      {
+        "name": "A. Rabiot",
+        "shots": 1,
+        "sot": 1,
+        "key_passes": 1,
+        "tackles": 0,
+        "fouls_committed": 2,
+        "fouls_drawn": 3,
+        "dispossessed": 1,
+        "offsides": 0,
+        "yellow_cards": 1,
+        "goals": 0,
+        "assists": 0,
+        "foul_involvements": 5,
+        "goal_involvements": 0
+      },
+      {
+        "name": "J. Koundé",
+        "shots": 0,
+        "sot": 0,
+        "key_passes": 0,
+        "tackles": 0,
+        "fouls_committed": 2,
+        "fouls_drawn": 1,
+        "dispossessed": 0,
+        "offsides": 0,
+        "yellow_cards": 0,
+        "goals": 0,
+        "assists": 0,
+        "foul_involvements": 3,
+        "goal_involvements": 0
+      },
+      {
+        "name": "M. Koné",
+        "shots": 0,
+        "sot": 0,
+        "key_passes": 0,
+        "tackles": 0,
+        "fouls_committed": 2,
+        "fouls_drawn": 1,
+        "dispossessed": 0,
+        "offsides": 0,
+        "yellow_cards": 0,
+        "goals": 0,
+        "assists": 0,
+        "foul_involvements": 3,
+        "goal_involvements": 0
+      },
+      {
+        "name": "M. Lacroix",
+        "shots": 0,
+        "sot": 0,
+        "key_passes": 0,
+        "tackles": 0,
+        "fouls_committed": 2,
+        "fouls_drawn": 0,
+        "dispossessed": 0,
+        "offsides": 0,
+        "yellow_cards": 0,
+        "goals": 0,
+        "assists": 0,
+        "foul_involvements": 2,
+        "goal_involvements": 0
+      },
+      {
+        "name": "L. Digne",
+        "shots": 0,
+        "sot": 0,
+        "key_passes": 0,
+        "tackles": 0,
+        "fouls_committed": 1,
+        "fouls_drawn": 0,
+        "dispossessed": 0,
+        "offsides": 0,
+        "yellow_cards": 0,
+        "goals": 0,
+        "assists": 0,
+        "foul_involvements": 1,
+        "goal_involvements": 0
+      },
+      {
+        "name": "T. Hernández",
+        "shots": 0,
+        "sot": 0,
+        "key_passes": 0,
+        "tackles": 0,
+        "fouls_committed": 1,
+        "fouls_drawn": 0,
+        "dispossessed": 0,
+        "offsides": 0,
+        "yellow_cards": 0,
+        "goals": 0,
+        "assists": 0,
+        "foul_involvements": 1,
+        "goal_involvements": 0
+      },
+      {
+        "name": "R. Cherki",
+        "shots": 0,
+        "sot": 0,
+        "key_passes": 0,
+        "tackles": 1,
+        "fouls_committed": 0,
+        "fouls_drawn": 0,
+        "dispossessed": 0,
+        "offsides": 0,
+        "yellow_cards": 0,
+        "goals": 0,
+        "assists": 0,
+        "foul_involvements": 0,
+        "goal_involvements": 0
+      },
+      {
+        "name": "D. Upamecano",
+        "shots": 0,
+        "sot": 0,
+        "key_passes": 0,
+        "tackles": 0,
+        "fouls_committed": 1,
+        "fouls_drawn": 0,
+        "dispossessed": 0,
+        "offsides": 0,
+        "yellow_cards": 0,
+        "goals": 0,
+        "assists": 0,
+        "foul_involvements": 1,
+        "goal_involvements": 0
+      }
+    ],
+    "Spain": [
+      {
+        "name": "P. Porro",
+        "shots": 2,
+        "sot": 1,
+        "key_passes": 2,
+        "tackles": 0,
+        "fouls_committed": 0,
+        "fouls_drawn": 2,
+        "dispossessed": 0,
+        "offsides": 0,
+        "yellow_cards": 0,
+        "goals": 1,
+        "assists": 0,
+        "foul_involvements": 2,
+        "goal_involvements": 1
+      },
+      {
+        "name": "Á. Baena",
+        "shots": 2,
+        "sot": 0,
+        "key_passes": 1,
+        "tackles": 1,
+        "fouls_committed": 1,
+        "fouls_drawn": 1,
+        "dispossessed": 2,
+        "offsides": 2,
+        "yellow_cards": 0,
+        "goals": 0,
+        "assists": 0,
+        "foul_involvements": 2,
+        "goal_involvements": 0
+      },
+      {
+        "name": "M. Oyarzabal",
+        "shots": 2,
+        "sot": 1,
+        "key_passes": 2,
+        "tackles": 0,
+        "fouls_committed": 0,
+        "fouls_drawn": 1,
+        "dispossessed": 0,
+        "offsides": 0,
+        "yellow_cards": 0,
+        "goals": 1,
+        "assists": 0,
+        "foul_involvements": 1,
+        "goal_involvements": 1
+      },
+      {
+        "name": "F. Torres",
+        "shots": 1,
+        "sot": 0,
+        "key_passes": 1,
+        "tackles": 1,
+        "fouls_committed": 0,
+        "fouls_drawn": 0,
+        "dispossessed": 1,
+        "offsides": 0,
+        "yellow_cards": 0,
+        "goals": 0,
+        "assists": 0,
+        "foul_involvements": 0,
+        "goal_involvements": 0
+      },
+      {
+        "name": "F. Ruiz",
+        "shots": 1,
+        "sot": 0,
+        "key_passes": 2,
+        "tackles": 4,
+        "fouls_committed": 1,
+        "fouls_drawn": 4,
+        "dispossessed": 0,
+        "offsides": 0,
+        "yellow_cards": 0,
+        "goals": 0,
+        "assists": 0,
+        "foul_involvements": 5,
+        "goal_involvements": 0
+      },
+      {
+        "name": "D. Olmo",
+        "shots": 1,
+        "sot": 0,
+        "key_passes": 2,
+        "tackles": 2,
+        "fouls_committed": 1,
+        "fouls_drawn": 1,
+        "dispossessed": 3,
+        "offsides": 0,
+        "yellow_cards": 0,
+        "goals": 0,
+        "assists": 1,
+        "foul_involvements": 2,
+        "goal_involvements": 1
+      },
+      {
+        "name": "N. Williams",
+        "shots": 1,
+        "sot": 0,
+        "key_passes": 1,
+        "tackles": 0,
+        "fouls_committed": 0,
+        "fouls_drawn": 1,
+        "dispossessed": 0,
+        "offsides": 0,
+        "yellow_cards": 0,
+        "goals": 0,
+        "assists": 0,
+        "foul_involvements": 1,
+        "goal_involvements": 0
+      },
+      {
+        "name": "Rodri",
+        "shots": 0,
+        "sot": 0,
+        "key_passes": 0,
+        "tackles": 4,
+        "fouls_committed": 4,
+        "fouls_drawn": 3,
+        "dispossessed": 0,
+        "offsides": 0,
+        "yellow_cards": 0,
+        "goals": 0,
+        "assists": 0,
+        "foul_involvements": 7,
+        "goal_involvements": 0
+      },
+      {
+        "name": "L. Yamal",
+        "shots": 0,
+        "sot": 0,
+        "key_passes": 1,
+        "tackles": 1,
+        "fouls_committed": 1,
+        "fouls_drawn": 1,
+        "dispossessed": 2,
+        "offsides": 2,
+        "yellow_cards": 0,
+        "goals": 0,
+        "assists": 0,
+        "foul_involvements": 2,
+        "goal_involvements": 0
+      },
+      {
+        "name": "M. Cucurella",
+        "shots": 0,
+        "sot": 1,
+        "key_passes": 0,
+        "tackles": 4,
+        "fouls_committed": 1,
+        "fouls_drawn": 4,
+        "dispossessed": 0,
+        "offsides": 0,
+        "yellow_cards": 1,
+        "goals": 0,
+        "assists": 0,
+        "foul_involvements": 5,
+        "goal_involvements": 0
+      },
+      {
+        "name": "P. Cubarsí",
+        "shots": 0,
+        "sot": 0,
+        "key_passes": 0,
+        "tackles": 0,
+        "fouls_committed": 0,
+        "fouls_drawn": 2,
+        "dispossessed": 0,
+        "offsides": 0,
+        "yellow_cards": 0,
+        "goals": 0,
+        "assists": 0,
+        "foul_involvements": 2,
+        "goal_involvements": 0
+      },
+      {
+        "name": "M. Llorente",
+        "shots": 0,
+        "sot": 0,
+        "key_passes": 0,
+        "tackles": 0,
+        "fouls_committed": 0,
+        "fouls_drawn": 1,
+        "dispossessed": 0,
+        "offsides": 0,
+        "yellow_cards": 0,
+        "goals": 0,
+        "assists": 0,
+        "foul_involvements": 1,
+        "goal_involvements": 0
+      },
+      {
+        "name": "M. Merino",
+        "shots": 0,
+        "sot": 0,
+        "key_passes": 0,
+        "tackles": 0,
+        "fouls_committed": 0,
+        "fouls_drawn": 1,
+        "dispossessed": 0,
+        "offsides": 0,
+        "yellow_cards": 0,
+        "goals": 0,
+        "assists": 0,
+        "foul_involvements": 1,
+        "goal_involvements": 0
+      },
+      {
+        "name": "Pedri",
+        "shots": 0,
+        "sot": 0,
+        "key_passes": 0,
+        "tackles": 0,
+        "fouls_committed": 0,
+        "fouls_drawn": 1,
+        "dispossessed": 0,
+        "offsides": 0,
+        "yellow_cards": 0,
+        "goals": 0,
+        "assists": 0,
+        "foul_involvements": 1,
+        "goal_involvements": 0
+      },
+      {
+        "name": "U. Simón",
+        "shots": 0,
+        "sot": 0,
+        "key_passes": 0,
+        "tackles": 0,
+        "fouls_committed": 0,
+        "fouls_drawn": 1,
+        "dispossessed": 0,
+        "offsides": 0,
+        "yellow_cards": 0,
+        "goals": 0,
+        "assists": 0,
+        "foul_involvements": 1,
+        "goal_involvements": 0
+      }
+    ]
+  },
+  "tactical_analysis": {
+    "team_level": {
+      "headline": "A 3v2 midfield overload strangled France's supply line",
+      "summary": "Spain's midfield three of Rodri, Fabián Ruiz and Dani Olmo consistently outnumbered France's double pivot of Adrien Rabiot and Aurélien Tchouaméni. France intended to press high to disrupt Spain's rhythm, but the press lacked coordination, so Rodri and Ruiz were repeatedly afforded time and space to dictate tempo.",
+      "quote": {
+        "speaker": "Kylian Mbappé",
+        "point": "described facing repeated 3-vs-2 situations in midfield as the central tactical problem, and said France's press lacked communication"
+      },
+      "supporting_stats": {
+        "spain_tackles": 22,
+        "france_tackles": 13,
+        "spain_possession_pct": 51,
+        "france_possession_pct": 49
+      }
+    },
+    "players": [
+      {
+        "name": "Kylian Mbappé",
+        "role": "ST",
+        "headline": "Isolated, not man-marked — starved of service rather than shut down 1v1",
+        "summary": "Mbappé still led all players with 6 touches in the opposition box, but Spain's compact backline and midfield overload meant he rarely received the ball in dangerous, repeatable positions. He managed only one shot from open play (blocked/off target from a tight angle in the 67th minute), plus a stoppage-time free kick over the bar. He was caught offside twice trying to time runs in behind, and picked up a late yellow card for an off-the-ball incident with goalkeeper Unai Simón as frustration set in.",
+        "key_stats": {
+          "shots": 3,
+          "shots_open_play": 1,
+          "touches_in_box": 6,
+          "offsides": 3,
+          "dispossessed": 3,
+          "yellow_cards": 1
+        },
+        "neutralization_method": "collective_compactness_not_man_marking"
+      },
+      {
+        "name": "Michael Olise",
+        "role": "AM/RW (cutting inside from the left channel)",
+        "headline": "Man-marked directly by left-back Marc Cucurella",
+        "summary": "Spain assigned left-back Marc Cucurella to track Olise specifically down France's right flank for the full match, denying him the 1v1 space he thrives in. Cucurella picked up a yellow card doing it but succeeded in limiting Olise to zero shots, with his influence showing up instead in fouls drawn (3, most on the France team) rather than direct attacking output.",
+        "key_stats": {
+          "shots": 0,
+          "key_passes": 0,
+          "fouls_drawn": 3,
+          "tackles_won_by_marker": 4
+        },
+        "neutralization_method": "individual_man_marking"
+      },
+      {
+        "name": "Rodri",
+        "role": "CM (deep-lying controller)",
+        "headline": "Set the tempo Spain wanted, and won the ball back constantly",
+        "summary": "Rodri was the pivot around which Spain's control was built — dropping to receive from the centre-backs, dictating when to speed up or slow down play, and leading the entire match in tackles. His willingness to foul tactically (4 fouls committed, most on the pitch) also functioned as a pressure valve, stopping French transitions before they could develop.",
+        "key_stats": {
+          "tackles": 4,
+          "fouls_committed": 4,
+          "fouls_drawn": 3,
+          "key_passes": 0
+        },
+        "neutralization_method": "not_applicable_attacking_engine"
+      },
+      {
+        "name": "Fabián Ruiz",
+        "role": "CM (box-to-box progression)",
+        "headline": "The connector between Rodri's control and Spain's final third",
+        "summary": "Ruiz carried the ball through the overloaded midfield zone France couldn't cover, tying with Dani Olmo for Spain's most key passes (2) while also contributing defensively (4 tackles, level with Rodri). He was the clearest beneficiary of the 3v2 numerical advantage — repeatedly finding time on the ball that a fully-manned French midfield would have closed down.",
+        "key_stats": {
+          "shots": 1,
+          "key_passes": 2,
+          "tackles": 4,
+          "fouls_drawn": 4
+        },
+        "neutralization_method": "not_applicable_attacking_engine"
+      },
+      {
+        "name": "Dani Olmo",
+        "role": "AM (advanced creator)",
+        "headline": "The direct creative link to both goals",
+        "summary": "Olmo operated between France's lines all match, drawing defenders out of position before laying on Porro's decisive second goal with a one-two in the 58th minute. He matched Ruiz for most key passes on the pitch (2) and was Spain's most-dispossessed player (3) — a sign of how often he was willing to carry the ball into contact in dangerous areas rather than play it safe.",
+        "key_stats": {
+          "key_passes": 2,
+          "assists": 1,
+          "dispossessed": 3,
+          "tackles": 2
+        },
+        "neutralization_method": "not_applicable_attacking_engine"
+      }
+    ]
+  },
+  "narrative_facts": [
+    "Spain became the first team in the competition's history to keep six clean sheets at a single World Cup.",
+    "France's 0.3 xG is the lowest tally for a nation in a World Cup semi-final since Sweden vs Brazil in 1994 (0.1).",
+    "Mbappé was caught offside more times (2) than he had touches in the opposition box (1) in the first half.",
+    "Spain out-tackled France 22 to 13.",
+    "Spain have now beaten France in three straight major-tournament knockout meetings: Euro 2024 semi-final, 2024/25 Nations League playoff, and this World Cup semi-final."
+  ],
+  "pressing_proxy": {
+    "label": "Simplified pressing-intensity proxy (NOT standard PPDA)",
+    "methodology": "True PPDA requires zone-restricted, event-level pass and defensive-action data that isn't publicly available for this match. This proxy instead divides the opponent's total completed passes by a team's own tackle count for the full match (lower = more intense pressing) — a much cruder signal than real PPDA (which also includes interceptions and fouls, and restricts to defensive-third zones), shown for directional comparison only.",
+    "France": {
+      "opponent_passes_per_tackle": 38.6
+    },
+    "Spain": {
+      "opponent_passes_per_tackle": 21.5
+    }
+  }
+}

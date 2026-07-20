@@ -1,0 +1,13 @@
+{
+  "name": "scraper",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "description": "ETL step: fetches extended public match/player stats and produces data/extended_stats.json for human review.",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0"
+  }
+}

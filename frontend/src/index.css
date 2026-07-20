@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --pitch-dark: #081C15;
+  --pitch-mid: #0F3B2E;
+  --chalk: #F3F0E6;
+  --chalk-line: rgba(243, 240, 230, 0.55);
+  --france-blue: #4C7CE0;
+  --spain-red: #E0524C;
+  --gold: #E8B44A;
+  --ink: #0A1210;
+  --muted: rgba(243, 240, 230, 0.62);
+  --hairline: rgba(243, 240, 230, 0.12);
+
+  --font-display: 'Oswald', 'Arial Narrow', sans-serif;
+  --font-body: 'Inter', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  background: var(--ink);
+  color: var(--chalk);
+}
+
+body {
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  margin: 0;
+}
+
+blockquote {
+  border-left: 3px solid var(--gold);
+  padding-left: 1rem;
+  margin: 1.5rem 0 0;
+  font-style: italic;
+  color: var(--chalk);
+}
+
+blockquote cite {
+  display: block;
+  margin-top: 0.5rem;
+  font-style: normal;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+code {
+  font-family: var(--font-mono);
+  background: rgba(255,255,255,0.06);
+  padding: 0.1em 0.4em;
+  border-radius: 3px;
+}

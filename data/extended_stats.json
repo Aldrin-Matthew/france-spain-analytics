@@ -1,0 +1,317 @@
+{
+  "generated_at": "2026-07-20T08:53:00.905Z",
+  "note": "Additive enrichment data for human review — not auto-merged into ../frontend/src/data/matchData.json. Cross-check numbers here against the hand-curated dataset before pulling anything in.",
+  "results": {
+    "playerstats.football": {
+      "source": "https://playerstats.football/fixture/france/spain/2026-07-14",
+      "fetched_at": "2026-07-20T08:52:59.435Z",
+      "teams": {
+        "France": {
+          "team_stats": {
+            "corners": "7",
+            "shots off target": "5",
+            "shots total": "10",
+            "possession": "49%",
+            "penalties": "0",
+            "shots inside box": "4",
+            "shots outside box": "6",
+            "offsides": "4",
+            "goals": "0",
+            "goal kicks": "8",
+            "free kicks": "17",
+            "fouls": "11",
+            "saves": "0",
+            "shots blocked": "3",
+            "throw ins": "22",
+            "tackles": "13",
+            "passes": "472",
+            "yellow cards": "2",
+            "shots on target": "3",
+            "crosses": "20"
+          },
+          "player_highlight_stats": [
+            {
+              "name": "Jules Koundé",
+              "profile_url": "https://playerstats.football/player/337394",
+              "stats": {
+                "Fouls Committed": "2",
+                "Foul Involvements": "3"
+              }
+            },
+            {
+              "name": "Manu Koné",
+              "profile_url": "https://playerstats.football/player/23738800",
+              "stats": {
+                "Fouls Committed": "2",
+                "Foul Involvements": "3",
+                "Dispossessed": "1"
+              }
+            },
+            {
+              "name": "Adrien Rabiot",
+              "profile_url": "https://playerstats.football/player/95694",
+              "stats": {
+                "Fouls Committed": "2",
+                "Tackles": "3",
+                "Yellow Cards": "1",
+                "Offsides": "1"
+              }
+            },
+            {
+              "name": "Michael Olise",
+              "profile_url": "https://playerstats.football/player/24799984",
+              "stats": {
+                "Fouls Drawn": "3",
+                "Tackles": "3",
+                "Key Passes": "2",
+                "Foul Involvements": "4",
+                "Dispossessed": "2"
+              }
+            },
+            {
+              "name": "Lucas Digne",
+              "profile_url": "https://playerstats.football/player/95368",
+              "stats": {
+                "Fouls Drawn": "1"
+              }
+            },
+            {
+              "name": "Dayot Upamecano",
+              "profile_url": "https://playerstats.football/player/33685",
+              "stats": {
+                "Fouls Drawn": "1"
+              }
+            },
+            {
+              "name": "Aurélien Tchouaméni",
+              "profile_url": "https://playerstats.football/player/5270371",
+              "stats": {
+                "Tackles": "4"
+              }
+            },
+            {
+              "name": "Désiré Doué",
+              "profile_url": "https://playerstats.football/player/37590938",
+              "stats": {
+                "Key Passes": "2",
+                "Shots": "2",
+                "Shots on Target (SoT)": "1"
+              }
+            },
+            {
+              "name": "Ousmane Dembélé",
+              "profile_url": "https://playerstats.football/player/32403",
+              "stats": {
+                "Key Passes": "1",
+                "Shots": "2",
+                "Shots on Target (SoT)": "2"
+              }
+            },
+            {
+              "name": "Kylian Mbappé",
+              "profile_url": "https://playerstats.football/player/96611",
+              "stats": {
+                "Shots": "3",
+                "Yellow Cards": "1",
+                "Dispossessed": "3",
+                "Offsides": "3"
+              }
+            }
+          ]
+        },
+        "Spain": {
+          "team_stats": {
+            "corners": "1",
+            "shots off target": "5",
+            "shots total": "10",
+            "possession": "51%",
+            "penalties": "1",
+            "shots inside box": "5",
+            "shots outside box": "5",
+            "offsides": "5",
+            "goals": "2",
+            "goal kicks": "10",
+            "free kicks": "14",
+            "fouls": "12",
+            "saves": "3",
+            "shots blocked": "2",
+            "throw ins": "16",
+            "tackles": "22",
+            "passes": "502",
+            "yellow cards": "1",
+            "shots on target": "2",
+            "crosses": "7"
+          },
+          "player_highlight_stats": [
+            {
+              "name": "Rodri",
+              "profile_url": "https://playerstats.football/player/186910",
+              "stats": {
+                "Fouls Committed": "4",
+                "Fouls Drawn": "3",
+                "Tackles": "4",
+                "Foul Involvements": "7"
+              }
+            },
+            {
+              "name": "Lamine Yamal",
+              "profile_url": "https://playerstats.football/player/37656179",
+              "stats": {
+                "Fouls Committed": "3",
+                "Foul Involvements": "4",
+                "Offsides": "2"
+              }
+            },
+            {
+              "name": "Ferran Torres",
+              "profile_url": "https://playerstats.football/player/448389",
+              "stats": {
+                "Fouls Committed": "1",
+                "Key Passes": "1",
+                "Offsides": "1"
+              }
+            },
+            {
+              "name": "Dani Olmo",
+              "profile_url": "https://playerstats.football/player/74060",
+              "stats": {
+                "Fouls Drawn": "2",
+                "Key Passes": "2",
+                "Assists": "1",
+                "Goal Involvements": "1",
+                "Foul Involvements": "3",
+                "Dispossessed": "3"
+              }
+            },
+            {
+              "name": "Álex Baena",
+              "profile_url": "https://playerstats.football/player/7698436",
+              "stats": {
+                "Fouls Drawn": "2",
+                "Shots": "2",
+                "Dispossessed": "2",
+                "Offsides": "2"
+              }
+            },
+            {
+              "name": "Fabián Ruiz",
+              "profile_url": "https://playerstats.football/player/186735",
+              "stats": {
+                "Tackles": "4",
+                "Key Passes": "2"
+              }
+            },
+            {
+              "name": "Marc Cucurella",
+              "profile_url": "https://playerstats.football/player/448448",
+              "stats": {
+                "Tackles": "4",
+                "Yellow Cards": "1",
+                "Dispossessed": "2"
+              }
+            },
+            {
+              "name": "Pedro Porro",
+              "profile_url": "https://playerstats.football/player/8456257",
+              "stats": {
+                "Shots": "2",
+                "Shots on Target (SoT)": "1",
+                "Goals Scored": "1",
+                "Goal Involvements": "1"
+              }
+            },
+            {
+              "name": "Mikel Oyarzabal",
+              "profile_url": "https://playerstats.football/player/186932",
+              "stats": {
+                "Shots": "2",
+                "Shots on Target (SoT)": "1",
+                "Goals Scored": "1",
+                "Goal Involvements": "1"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "managingmadrid.com": {
+      "source": "https://www.managingmadrid.com/real-madrid-cf-players/110046/spain-end-france-and-mbappes-2026-world-cup-hopes-with-semi-final-upset",
+      "fetched_at": "2026-07-20T08:53:00.159Z",
+      "headline": "Spain end France and Mbappé’s 2026 World Cup hopes with semi-final upset",
+      "date_published": "2026-07-14T20:59:05+00:00",
+      "quotes": [],
+      "article_excerpt": "2026 World Cup favourites France crashed out of the tournament at the semi-final stage as Spain produced an impressive 2-0 victory to send Les Bleus home and limit Kylian Mbappé’s hopes of securing the tournament’s Golden Boot.\nSpain took the lead through a composed penalty from Real Sociedad’s Mikel Oyarzabal, after imminent Paris Saint-Germain signing Lucas Digne took out Lamine Yamal in a clumsy challenge early in the first half. France struggled to bounce back, failing to record a shot on target in a first half in which they also lost key central defender William Saliba to injury. New Real Madrid arrival Ibrahima Konaté remained an unused substitute.\nSpain left-back Marc Cucurella was key to the shutdown of the French attack, tasked with stopping Michael Olise down France’s right-flank. He picked up a yellow card after hacking him down twice in quick succession in the first half, but was otherwise caused few problems, winning five duels and crucially intervening in injury time to deny Mbappé the chance to break through in the box.\nIn midfield, Aurélien Tchouameni returned after missing the last two games with a thigh strain for France, but he struggled to gain control in a dyna"
+    },
+    "fotmob newsletter": {
+      "source": "https://newsletter.fotmob.com/p/spain-masterclass-knocks-out-france",
+      "fetched_at": "2026-07-20T08:53:00.904Z",
+      "headline": "Spain masterclass knocks out France",
+      "date_published": "2026-07-15T08:45:36.903Z",
+      "quotes": [
+        "exceptional",
+        "devastated",
+        "technically inferior.",
+        "El robo del siglo",
+        "Hand of God"
+      ],
+      "paragraphs": [
+        "The reigning European champions radiated calmness and control, deservedly claiming a tremendous 2-0 win over France thanks to a brilliantly well-rounded team display to advance into the World Cup final.",
+        "Spain opened the scoring from the spot midway through the first half when Lamine Yamal was apprehended by Lucas Digne. Mikel Oyarzabal stepped up as the coolest man in the stadium, firing his spotkick into the corner.",
+        "Everyone was anticipating a French onslaught on the Spanish goal in the second half, only for Pedro Porro to double La Roja’s lead with a decisive finish after an intricate one-two with Dani Olmo on 58 minutes. France knocked on the door, but there was no beating Spain’s impenetrable defence.",
+        "The result means that Spain are the first team in the competition’s history to keep six clean sheets at a single World Cup, while the 0.3 xG France accumulated against them is the lowest tally for a nation in a semi-final in the tournament since Sweden versus Brazil in 1994 (0.1).",
+        "Spain’s watertight defence neutralised France’s star-studded attack to devastating effect. Luis de la Fuente described his side as “exceptional”, and it's easy to understand why – Spain look like red-hot prospects to lift the trophy on Sunday.",
+        "🇪🇸 ‘Control beats Chaos’ - match reaction from Sports Illustrated",
+        "Once again, Mikel Oyarzabal delivered for his country, playing a pivotal role in Spain’s smooth triumph over France.",
+        "The 29-year-old’s clinical penalty handed La Roja a 22nd-minute lead for his fifth goal at this tournament, meaning no Spanish player has ever scored more than this at a single World Cup.",
+        "De la Fuente’s key men at the tournament",
+        "Oyarzabal's importance for de la Fuente’s side stretches over a far longer period – since the start of 2025, he’s registered 24 goal contributions in 19 appearances across all competitions (17 goals, seven assists), 14 more than any other player.",
+        "The Real Sociedad frontman is an effective and unselfish cog in Spain’s slick attack, whose proven he can deliver in defining moments. He will forever haunt England fans after he netted the winning goal in Spain’s 2-1 European Championship final victory in 2024.",
+        "Oyarzabal doesn’t necessarily garner the headlines by default, given he isn’t the most skilful, powerful or eye-catching forward but you simply cannot argue with his output, and he will undoubtedly be one of the first names on the teamsheet for Sunday’s final.",
+        "🇫🇷🇪🇸 Full France-Spain match report",
+        "On a night where Didier Deschamps took charge of his 26th World Cup match, the outright most of any manager, his France side tumbled to a hugely disappointing defeat to end their hopes of reaching a third successive final.",
+        "Spain have emerged as Deschamps’ bogey team as Les Bleus have now lost three straight semi-finals against Spain (2-1 in Euro 2024 and 5-4 in 2024/25 Nations League).",
+        "It seems crazy to say about France, but their ridiculously talented attack just didn’t click, with Deschamps calling his players “devastated” and “technically inferior.”",
+        "Kylian Mbappé arrived in Dallas brimming with confidence after bagging eight goals in the tournament, but his frustrating outing was encapsulated by the fact that he was caught offside more times (twice) than he had touches in the opposition box (one) in the first half.",
+        "The Spanish machine keeps marching on as they target back-to-back major tournament trophies, while France will have to settle for the third-place play-off match on Saturday – something that neither Deschamps nor his captain would have envisioned taking part in when they were steamrolling through the earlier rounds of the competition.",
+        "🇫🇷🗣️ Deschamps’ post-match quotes in full",
+        "Login or Subscribe to participate",
+        "Spain’s opponents in the final will be decided today, with England taking on reigning world champions Argentina in Atlanta in what promises to be a mouthwatering encounter for all involved.",
+        "England vs. Argentina H2H results at previous World Cups",
+        "For the first time since 2002, old enemies England and Argentina will meet again in a World Cup to battle for a spot in this year’s final.",
+        "In total, these two nations have played each other five times in the competition’s history, but they’ve never clashed this deep into the tournament, meaning the stakes arguably couldn't be higher.",
+        "The fire of this rivalry was ignited in their 1966 quarter-final, when Argentina captain Antonio Rattín refused to leave the pitch for several minutes after being sent off, before Geoff Hurst’s second-half strike blessed England with a narrow 1-0 victory on their way to lifting the World Cup trophy for the only time in the country’s history. England boss Alf Ramsey refused to let his players swap shirts with the opposition at full-time, while in Argentina, this game is referred to as “El robo del siglo” (the theft of the century).",
+        "La Albiceleste revelled in their revenge 20 years later at the same stage, with Diego Maradona’s notorious “Hand of God” and extraordinary solo effort sealing a 2-1 win for Argentina, who ended up clinching the tournament in Mexico courtesy of a 3-2 victory over West Germany at the Azteca in the 1986 final.",
+        "David Beckham’s red card during Argentina’s 1998 victory in the round of 16 on penalties is another infamous moment, with the former England skipper redeeming himself four years afterwards by netting a penalty in the Three Lions’ 1-0 group-stage win.",
+        "We’ve not even scratched the surface with the wider historical significance and bitterness of this epic rivalry, but you can guarantee drama when England and Argentina battle on a football pitch.",
+        "🏴󠁧󠁢󠁥󠁮󠁧󠁿🇦🇷 Full H2H history of England-Argentina",
+        "Jude Bellingham’s heroics have dragged England through their previous two matches, with his spectacular performance single-handedly powering his nation to a 2-1 comeback victory over Norway.",
+        "Bellingham is the highest scoring midfielder at the World Cup",
+        "While the win against Mexico was a resounding team effort, Bellingham shouldered all the responsibility in the Norway clash. The Real Madrid man’s equaliser just before the break was a sensational finish and his winner showcased some brilliant instinct to pounce on a rebound.",
+        "Bellingham’s double ensured he became the first player to score two or more goals in successive World Cup knockout games since Maradona (1986) and the youngest to do so at 23 years and 12 days since Pelé (17y 249d) in 1958. That is quite an esteemed, exclusive club.",
+        "Only Gary Lineker (six in 1986) has scored as many non-penalty goals in a single World Cup tournament for the Three Lions as Bellingham in 2026 (six).",
+        "The 23-year-old has emerged as the ultimate player for the big occasion, with a World Cup semi-final tie against Argentina arguably the grandest and most befitting occasion of all. Bellingham seems to be relishing the expectation bestowed upon him.",
+        "🏴󠁧󠁢󠁥󠁮󠁧󠁿🇦🇷 England-Argentina match preview",
+        "Are the defending champions a great team who always find a way or will they come unstuck against an opponent containing real world-class quality?",
+        "By the skin of their teeth, Argentina have narrowly squeezed through their three knockout ties, beating Cabo Verde, Egypt and Switzerland in dramatic circumstances, needing extra time to overcome two of them.",
+        "Overall, Argentina’s 3-1 victory against Switzerland was their 13th match to reach extra time at the World Cup, more than any other team, and the South Americans’ late goals meant they’ve recorded 11 wins in such situations.",
+        "Lionel Messi has predictably been his nation’s attacking heartbeat at this tournament. Although he didn’t score against Switzerland, his corner teed up Alexis Mac Allister for the opener, and was his 10th World Cup assist, two more than any other player since 1966 (Maradona has eight).",
+        "Suppressing the diminutive genius, who is the tournament’s joint-top scorer alongside Mbappé with eight goals, almost seems like an impossible task, but Messi is entering uncharted territory in his international career, given that this is the first time that the 39-year-old has faced England.",
+        "Back-to-back World Cup trophies are on line for Messi, with the defiant Three Lions standing in his way of setting a new, potentially unrepeatable benchmark.",
+        "🇦🇷🗣️ Argentina inspired by Maradona ahead of England clash"
+      ]
+    },
+    "espn.com": [
+      {
+        "source": "https://www.espn.com/soccer/match/_/gameId/760514/spain-france",
+        "status": "skipped",
+        "reason": "HTTP 202 bot-challenge response — not reachable via plain HTTP fetch, requires a real browser session."
+      },
+      {
+        "source": "https://www.espn.com/soccer/story/_/id/49362319/kylian-mbappe-critical-tactics-sloppy-france-loss",
+        "status": "skipped",
+        "reason": "HTTP 202 bot-challenge response — not reachable via plain HTTP fetch, requires a real browser session."
+      }
+    ]
+  },
+  "errors": []
+}

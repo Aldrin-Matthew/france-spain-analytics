@@ -5,12 +5,10 @@ An interactive breakdown of Spain's 2-0 win over France in the FIFA World Cup 20
 that arrived as tournament favourites, top scorers of the knockout rounds, led by Golden Boot
 contender Kylian Mbappé.
 
-**[Live demo →](#)** *(add your deployed link here once published)*
-
+**[Live demo :](#)** [*Link to site*](https://france-spain-analytics.vercel.app/)
 ## What's in here
 
-The site is a 7-section paginated deck (arrow nav + a collapsible sidebar/bottom-sheet menu) rather
-than a single long scroll:
+The site is a 7-section paginated deck:
 
 1. **Team stats** — possession, xG, shots, tackles, passing, fouls, plus the pressing-intensity proxy.
 2. **Starting XI** — a full-pitch formation diagram for both sides (4-2-3-1 each), with a short

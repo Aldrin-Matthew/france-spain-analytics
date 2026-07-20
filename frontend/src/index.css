@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
 
+/* Design-token variables. Also used directly by the SVG pitch diagrams
+   (Pitch.jsx, TacticalDiagrams.jsx) via var(--x) in inline attributes.
+
+   Note: this project's Tailwind v4 + Vite 8 combo does not pick up @theme-based
+   custom colors/fonts (verified — the tokens register but no utilities generate
+   from them), so color utilities in components use Tailwind's arbitrary-value
+   syntax (e.g. bg-[#0A1210]) instead of named theme colors, and font-family is
+   applied here as plain (unlayered) CSS, which reliably overrides Tailwind's
+   own layered utilities of the same class name (e.g. its default .font-mono). */
 :root {
   --pitch-dark: #081C15;
   --pitch-mid: #0F3B2E;
@@ -9,33 +19,24 @@
   --spain-red: #E0524C;
   --gold: #E8B44A;
   --ink: #0A1210;
-  --muted: rgba(243, 240, 230, 0.62);
-  --hairline: rgba(243, 240, 230, 0.12);
-
   --font-display: 'Oswald', 'Arial Narrow', sans-serif;
   --font-body: 'Inter', -apple-system, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;
 }
 
-* { box-sizing: border-box; }
-
-html, body, #root {
-  margin: 0;
-  padding: 0;
-  background: var(--ink);
-  color: var(--chalk);
-}
-
 body {
   font-family: var(--font-body);
-  line-height: 1.6;
 }
 
-h1, h2, h3 {
+h1, h2, h3, .font-display {
   font-family: var(--font-display);
   text-transform: uppercase;
   letter-spacing: 0.01em;
   margin: 0;
+}
+
+.font-mono {
+  font-family: var(--font-mono) !important;
 }
 
 blockquote {
@@ -43,15 +44,6 @@ blockquote {
   padding-left: 1rem;
   margin: 1.5rem 0 0;
   font-style: italic;
-  color: var(--chalk);
-}
-
-blockquote cite {
-  display: block;
-  margin-top: 0.5rem;
-  font-style: normal;
-  font-size: 0.85rem;
-  color: var(--muted);
 }
 
 code {

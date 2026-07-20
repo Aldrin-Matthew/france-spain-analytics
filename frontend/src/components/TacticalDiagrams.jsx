@@ -1,4 +1,5 @@
 import Pitch from './Pitch';
+import { abbreviateName } from '../utils/names';
 
 // Small reusable player token
 function PlayerDot({ x, y, color, label, ring = false }) {
@@ -139,6 +140,66 @@ export function OliseDiagram() {
       <text x={450} y={430} textAnchor="middle" fontSize="13" fill="var(--spain-red)" opacity="0.85">
         Cucurella tracks Olise the full match
       </text>
+    </Pitch>
+  );
+}
+
+const FORMATION_BUCKET = {
+  GK: 'GK',
+  LB: 'DEF', CB: 'DEF', RB: 'DEF',
+  CM: 'DM',
+  LW: 'AM', AM: 'AM', RW: 'AM',
+  ST: 'ST',
+};
+
+const X_BY_BUCKET = {
+  France: { GK: 55, DEF: 90, DM: 155, AM: 220, ST: 290 },
+  Spain: { GK: 645, DEF: 610, DM: 545, AM: 480, ST: 410 },
+};
+
+const Y_TEMPLATE = {
+  GK: [225],
+  DEF: [70, 170, 280, 380],
+  DM: [150, 300],
+  AM: [90, 195, 360],
+  ST: [225],
+};
+
+function buildFormationPositions(startingXi, team) {
+  const buckets = { GK: [], DEF: [], DM: [], AM: [], ST: [] };
+  for (const p of startingXi) {
+    buckets[FORMATION_BUCKET[p.pos] || 'AM'].push(p);
+  }
+  const xByBucket = X_BY_BUCKET[team];
+  const positions = [];
+  for (const bucket of ['GK', 'DEF', 'DM', 'AM', 'ST']) {
+    buckets[bucket].forEach((p, i) => {
+      positions.push({ name: abbreviateName(p.name), x: xByBucket[bucket], y: Y_TEMPLATE[bucket][i] ?? 225 });
+    });
+  }
+  return positions;
+}
+
+export function LineupsDiagram({ lineups }) {
+  const france = buildFormationPositions(lineups.France.starting_xi, 'France');
+  const spain = buildFormationPositions(lineups.Spain.starting_xi, 'Spain');
+
+  return (
+    <Pitch height={560}>
+      <line x1={350} y1={8} x2={350} y2={442} stroke="var(--gold)" strokeWidth="1.5" strokeDasharray="6 4" opacity="0.5" />
+      <text x={175} y={28} textAnchor="middle" fontSize="14" fill="var(--france-blue)" fontFamily="var(--font-mono)">
+        FRANCE · {lineups.France.formation}
+      </text>
+      <text x={525} y={28} textAnchor="middle" fontSize="14" fill="var(--spain-red)" fontFamily="var(--font-mono)">
+        SPAIN · {lineups.Spain.formation}
+      </text>
+
+      {france.map((p, i) => (
+        <PlayerDot key={`f${i}`} x={p.x} y={p.y} color="var(--france-blue)" label={p.name} />
+      ))}
+      {spain.map((p, i) => (
+        <PlayerDot key={`s${i}`} x={p.x} y={p.y} color="var(--spain-red)" label={p.name} />
+      ))}
     </Pitch>
   );
 }

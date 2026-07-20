@@ -19,25 +19,30 @@ function topFive(players, key) {
     .slice(0, 5);
 }
 
+function KpiTile({ value, label, borderClass = 'border-[#F3F0E6]/12' }) {
+  return (
+    <div className={`rounded-xl border ${borderClass} bg-white/[0.02] p-6 text-center`}>
+      <span className="block font-display text-4xl leading-none text-[#E8B44A]">{value}</span>
+      <span className="mt-2.5 block text-xs uppercase tracking-[0.05em] text-[#F3F0E6]/62">{label}</span>
+    </div>
+  );
+}
+
 function XgTile({ teamFilter, teamStats }) {
   if (teamFilter === 'All') {
     return (
-      <div className="kpi-tile kpi-tile--xg">
-        <span className="kpi-tile__value kpi-tile__value--split">
-          <span className="kpi-tile__value--france">{teamStats.France.xg.toFixed(2)}</span>
-          <span className="kpi-tile__value-sep">–</span>
-          <span className="kpi-tile__value--spain">{teamStats.Spain.xg.toFixed(2)}</span>
+      <div className="rounded-xl border border-[#E8B44A] bg-white/[0.02] p-6 text-center">
+        <span className="inline-flex items-baseline gap-2 font-display text-4xl leading-none">
+          <span className="text-[#4C7CE0]">{teamStats.France.xg.toFixed(2)}</span>
+          <span className="text-lg text-[#F3F0E6]/62">–</span>
+          <span className="text-[#E0524C]">{teamStats.Spain.xg.toFixed(2)}</span>
         </span>
-        <span className="kpi-tile__label">xG (France – Spain)</span>
+        <span className="mt-2.5 block text-xs uppercase tracking-[0.05em] text-[#F3F0E6]/62">xG (France – Spain)</span>
       </div>
     );
   }
-  return (
-    <div className={`kpi-tile kpi-tile--xg kpi-tile--${teamFilter.toLowerCase()}`}>
-      <span className="kpi-tile__value">{teamStats[teamFilter].xg.toFixed(2)}</span>
-      <span className="kpi-tile__label">{teamFilter} xG</span>
-    </div>
-  );
+  const borderClass = teamFilter === 'France' ? 'border-[#4C7CE0]' : 'border-[#E0524C]';
+  return <KpiTile value={teamStats[teamFilter].xg.toFixed(2)} label={`${teamFilter} xG`} borderClass={borderClass} />;
 }
 
 export default function MatchDashboard({ playerStats, teamStats, photos }) {
@@ -54,56 +59,55 @@ export default function MatchDashboard({ playerStats, teamStats, photos }) {
   );
 
   return (
-    <div className="dashboard">
-      <div className="dashboard__filters">
+    <div>
+      <div className="mb-6 flex gap-2">
         {['All', 'France', 'Spain'].map((t) => (
           <button
             key={t}
-            className={`team-filter-btn${teamFilter === t ? ' team-filter-btn--active' : ''}`}
+            type="button"
             onClick={() => setTeamFilter(t)}
+            className={`rounded-md border px-3.5 py-1.5 font-mono text-xs uppercase tracking-[0.06em] transition
+              ${teamFilter === t ? 'border-[#E8B44A] bg-[#E8B44A] text-[#0A1210]' : 'border-[#F3F0E6]/12 text-[#F3F0E6]/62 hover:text-[#F3F0E6]'}`}
           >
             {t === 'All' ? 'Both teams' : t}
           </button>
         ))}
       </div>
 
-      <div className="dashboard__kpis">
+      <div className="mb-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {METRICS.map((m) => (
-          <div className="kpi-tile" key={m.key}>
-            <span className="kpi-tile__value">{average(players, m.key).toFixed(1)}</span>
-            <span className="kpi-tile__label">{m.kpiLabel}</span>
-          </div>
+          <KpiTile key={m.key} value={average(players, m.key).toFixed(1)} label={m.kpiLabel} />
         ))}
         <XgTile teamFilter={teamFilter} teamStats={teamStats} />
       </div>
 
-      <div className="dashboard__leaderboards">
+      <div className="grid gap-6 md:grid-cols-3">
         {METRICS.map((m) => {
           const top = topFive(players, m.key);
           const max = top[0]?.[m.key] || 1;
           return (
-            <div className="leaderboard" key={m.key}>
-              <h4 className="leaderboard__title">Most {m.label.toLowerCase()}</h4>
+            <div key={m.key} className="rounded-xl border border-[#F3F0E6]/12 p-5">
+              <h4 className="mb-4 font-display text-base uppercase text-[#F3F0E6]">Most {m.label.toLowerCase()}</h4>
               {top.length === 0 ? (
-                <p className="leaderboard__empty">No {m.label.toLowerCase()} recorded.</p>
+                <p className="text-sm italic text-[#F3F0E6]/62">No {m.label.toLowerCase()} recorded.</p>
               ) : (
-                <ol className="leaderboard__list">
+                <ol className="grid gap-2.5">
                   {top.map((p, i) => (
-                    <li className="leaderboard__row" key={`${p.team}-${p.name}`}>
-                      <span className="leaderboard__rank">{i + 1}</span>
+                    <li key={`${p.team}-${p.name}`} className="grid grid-cols-[1.2rem_1.6rem_1fr_1.4rem] grid-rows-2 items-center gap-x-2.5">
+                      <span className="font-mono text-sm text-[#F3F0E6]/62">{i + 1}</span>
                       {photoByName[p.name] ? (
-                        <img className="leaderboard__photo" src={photoByName[p.name]} alt={p.name} />
+                        <img className="h-7 w-7 rounded-full object-cover object-top" src={photoByName[p.name]} alt={p.name} />
                       ) : (
-                        <span className={`team-dot team-dot--${p.team === 'France' ? 'france' : 'spain'}`} />
+                        <span className={`h-2 w-2 rounded-full ${p.team === 'France' ? 'bg-[#4C7CE0]' : 'bg-[#E0524C]'}`} />
                       )}
-                      <span className="leaderboard__name">{p.name}</span>
-                      <span className="leaderboard__bar-track">
+                      <span className="col-start-3 row-start-1 text-sm text-[#F3F0E6]">{p.name}</span>
+                      <span className="col-start-3 row-start-2 mt-1 block h-1.5 overflow-hidden rounded-sm bg-white/[0.06]">
                         <span
-                          className={`leaderboard__bar-fill leaderboard__bar-fill--${p.team === 'France' ? 'france' : 'spain'}`}
+                          className={`block h-full ${p.team === 'France' ? 'bg-[#4C7CE0]' : 'bg-[#E0524C]'}`}
                           style={{ width: `${(p[m.key] / max) * 100}%` }}
                         />
                       </span>
-                      <span className="leaderboard__value">{p[m.key]}</span>
+                      <span className="col-start-4 row-start-1 text-right font-mono text-sm text-[#E8B44A]">{p[m.key]}</span>
                     </li>
                   ))}
                 </ol>

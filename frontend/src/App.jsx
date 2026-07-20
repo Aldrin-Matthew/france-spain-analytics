@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import data from './data/matchData.json';
 import StatBar from './components/StatBar';
 import MatchDashboard from './components/MatchDashboard';
@@ -350,6 +351,7 @@ export default function App() {
       </div>
 
       <SectionNav sections={SECTIONS} activeIndex={activeIndex} onPrev={goPrev} onNext={goNext} onJump={goTo} />
+      <Analytics />
     </div>
   );
 }

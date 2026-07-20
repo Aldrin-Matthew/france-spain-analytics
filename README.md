@@ -9,18 +9,27 @@ contender Kylian Mbappé.
 
 ## What's in here
 
-- Team-level tactical story: how Spain's midfield trio (Rodri, Fabián Ruiz, Dani Olmo) created a
-  3v2 overload against France's double pivot, and why France's own high press collapsed.
-- A labeled pressing-intensity proxy (opponent passes per tackle) — explicitly **not** true PPDA;
-  see "Data & methodology" below for why.
-- **Spain's engine room**: individual breakdowns of Rodri (deep control), Fabián Ruiz (progression),
-  and Dani Olmo (creation, assisted the second goal).
-- Player spotlights with pitch diagrams:
-  - **Kylian Mbappé** — isolated by a compact defensive block rather than man-marked; led the team
-    in box touches but managed only one shot from open play.
-  - **Michael Olise** — man-marked directly by left-back Marc Cucurella for the full 90 minutes.
-- Full team stat comparison (possession, xG, shots, tackles, passing, fouls).
-- Match timeline (goals, cards, substitutions, disallowed goal).
+The site is a 7-section paginated deck (arrow nav + a collapsible sidebar/bottom-sheet menu) rather
+than a single long scroll:
+
+1. **Team stats** — possession, xG, shots, tackles, passing, fouls, plus the pressing-intensity proxy.
+2. **Starting XI** — a full-pitch formation diagram for both sides (4-2-3-1 each), with a short
+   attacking/defending brief per team.
+3. **The system** — how Spain's midfield trio (Rodri, Fabián Ruiz, Dani Olmo) created a 3v2 overload
+   against France's double pivot, and why France's own high press collapsed.
+4. **Spain's engine room** — individual breakdowns of Rodri (deep control), Fabián Ruiz (progression),
+   and Dani Olmo (creation, assisted the second goal), each with a player photo.
+5. **Player spotlights** with pitch diagrams:
+   - **Kylian Mbappé** — isolated by a compact defensive block rather than man-marked; led the team
+     in box touches but managed only one shot from open play.
+   - **Michael Olise** — man-marked directly by left-back Marc Cucurella for the full 90 minutes.
+6. **Full match stats** — a KPI + top-5-leaderboard dashboard (tackles, goal involvements, key passes,
+   xG) across both squads, filterable by team.
+7. **Match narrative** — key facts and data/photo credits.
+
+Player photos throughout are sourced from Wikimedia Commons (WikiPortraits at the 2026 FIFA World
+Cup, CC BY-SA 4.0, plus one CC BY 2.0 Flickr photo for Álex Baena) — see credits at the bottom of
+the site.
 
 ## Data & methodology
 
@@ -44,10 +53,19 @@ Given that, this project takes two honest paths instead of guessing:
 
 ## Stack
 
-- **Frontend:** React + Vite, hand-built SVG pitch diagrams (no charting library needed for the
-  pitch views; `recharts` is installed for any additional stat charts you add).
+- **Frontend:** React + Vite, styled with Tailwind CSS v4, hand-built SVG pitch diagrams (no
+  charting library needed for the pitch views; `recharts` is installed for any additional stat
+  charts you add).
+  - Note: colors/fonts are applied via Tailwind's arbitrary-value syntax (e.g. `bg-[#0A1210]`)
+    rather than named theme colors — in this project's specific Vite 8 + Tailwind 4 combo,
+    `@theme`-based custom tokens register but don't generate any utility classes. See the comment
+    at the top of `frontend/src/index.css` for details if you hit the same thing.
 - **Data:** static JSON (`data/match_data.json`), no backend required — this is a single-match
   dataset, so a database adds hosting complexity for no benefit.
+- **Scraper:** a small Node ETL step (`/scraper`) that pulls additional public stats (per-player
+  foul/goal involvements, narrative context) into `data/extended_stats.json` for manual review —
+  see `scraper/README.md`.
+
 ## Running locally
 
 ```bash
@@ -72,7 +90,7 @@ npm run deploy
   positions (label the switch clearly once done).
 - Replace the pressing-intensity proxy with true PPDA once/if event-level data becomes available.
 - Add pass-network diagrams (average position + pass volume between players) — needs event data,
-
+  see the methodology note above.
 
 ## Sources
 
